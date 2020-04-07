@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from todo import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,3 +31,5 @@ urlpatterns = [
     path('todo/<int:todo_pk>/complete', views.completetodo, name='completetodo'),
     path('todo/<int:todo_pk>/delete', views.deletetodo, name='deletetodo'),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
