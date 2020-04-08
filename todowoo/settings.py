@@ -25,7 +25,7 @@ SECRET_KEY = 'b578fbb77ec4405ddb6bc957c8b0186221c89cdfd68d924a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['pythondjangotodo.herokuapp.com','LOCALHOST']
+ALLOWED_HOSTS = ['pythondjangotodo.herokuapp.com']
 
 
 # Application definition
